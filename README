@@ -1,0 +1,38 @@
+
+Content
+-------
+CMSIS - Cortex Microcontroller Software Interface Standard Library for ST Cortex M3 Processor
+STM32F10x_StdPeriph_Driver - STM32F10x Standard Peripherals Library from ST
+
+Version
+--------
+V3.1.2
+
+Installation
+------------
+
+Just run "sudo sh install.sh"
+
+Alternative (for other path): 
+1. Install CMSIS:
+> cd CMSIS
+> make
+> sudo make install
+
+2. Install STM32:
+> cd STM32F10x_StdPeriph_Driver
+> make
+> sudo make install
+
+
+The default gcc toolchain is arm-elf, and default install directory is
+/opt/gnuarm. If you want to use a different settings you can use the prefix and arch_prefix
+variables. For example:
+
+> prefix=/usr/mydir arch_prefix=arm-elf make
+> prefix=/usr/mydir arch_prefix=arm-elf make install
+
+
+Link
+----------------
+www.st.com/STM32
